@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "icon": "qq_session_normal",
+            "title": "QQ友享"
+        },
+        {
+            "icon": "qq_session_disable",
+            "title": "QQ能享"
+        },
+        {
+            "icon": "qq_zone_disable",
+            "title": "不能分享"
+        },
+        {
+            "icon": "qq_zone_normal",
+            "title": "QQ空享"
+        },
+        {
+            "icon": "QRCode",
+            "title": "QQ分享"
+        },
+        {
+            "icon": "wechat_session_disable",
+            "title": "微信不分"
+        },
+        {
+            "icon": "wechat_session_normal",
+            "title": "微信分享"
+        },
+        {
+            "icon": "wechat_zone_disable",
+            "title": "空间不享"
+        },
+        {
+            "icon": "wechat_zone_normal",
+            "title": "微信间分"
+        },
+        {
+            "icon": "own_goal_small",
+            "title": "足球分享"
+        }
+    ]
+}

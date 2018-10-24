@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "icon": "app_icon_round256",
+            "title": "图标"
+        },
+        {
+            "icon": "dian_goal_small",
+            "title": "足球"
+        },
+        {
+            "icon": "live_arrow_image",
+            "title": "箭头"
+        },
+        {
+            "icon": "my_love_header_background",
+            "title": "直播"
+        },
+        {
+            "icon": "predict_success",
+            "title": "命中"
+        },
+        {
+            "icon": "zq_team_error_placeholder",
+            "title": "占位图"
+        }
+    ]
+}
