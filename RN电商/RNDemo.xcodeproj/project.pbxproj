@@ -10,6 +10,8 @@
 		1A3A780B9B32815EBB045E10 /* libPods-RNDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1875E25DA6EB46795DBC294D /* libPods-RNDemoUITests.a */; };
 		1A88B9E452875CD00770945E /* libPods-RNDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACAC8BC5654EE44040D6754 /* libPods-RNDemo.a */; };
 		1BAB5F320E751F2349F3B8B2 /* libPods-RNDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A49B67F60AB3CBDF8C2636F /* libPods-RNDemoTests.a */; };
+		6200094A218020D3000882E8 /* OpenNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 62000949218020D3000882E8 /* OpenNativeModule.m */; };
+		6200095021802887000882E8 /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6200094F21802887000882E8 /* ZYViewController.m */; };
 		6268BC5C217593B500AB0D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC5B217593B500AB0D79 /* AppDelegate.m */; };
 		6268BC5F217593B500AB0D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC5E217593B500AB0D79 /* ViewController.m */; };
 		6268BC64217593B500AB0D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6268BC63217593B500AB0D79 /* Assets.xcassets */; };
@@ -43,6 +45,10 @@
 		1875E25DA6EB46795DBC294D /* libPods-RNDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACAC8BC5654EE44040D6754 /* libPods-RNDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FCA5B9EBF62655C1A1B1FC /* Pods-RNDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDemoUITests/Pods-RNDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62000948218020D3000882E8 /* OpenNativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenNativeModule.h; sourceTree = "<group>"; };
+		62000949218020D3000882E8 /* OpenNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenNativeModule.m; sourceTree = "<group>"; };
+		6200094E21802887000882E8 /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
+		6200094F21802887000882E8 /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		6268BC57217593B500AB0D79 /* RNDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6268BC5A217593B500AB0D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6268BC5B217593B500AB0D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +129,10 @@
 				6268BC5B217593B500AB0D79 /* AppDelegate.m */,
 				6268BC5D217593B500AB0D79 /* ViewController.h */,
 				6268BC5E217593B500AB0D79 /* ViewController.m */,
+				6200094E21802887000882E8 /* ZYViewController.h */,
+				6200094F21802887000882E8 /* ZYViewController.m */,
+				62000948218020D3000882E8 /* OpenNativeModule.h */,
+				62000949218020D3000882E8 /* OpenNativeModule.m */,
 				6268BC63217593B500AB0D79 /* Assets.xcassets */,
 				6268BC65217593B500AB0D79 /* LaunchScreen.storyboard */,
 				6268BC68217593B500AB0D79 /* Info.plist */,
@@ -362,8 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6200094A218020D3000882E8 /* OpenNativeModule.m in Sources */,
 				6268BC5F217593B500AB0D79 /* ViewController.m in Sources */,
 				6268BC6A217593B500AB0D79 /* main.m in Sources */,
+				6200095021802887000882E8 /* ZYViewController.m in Sources */,
 				6268BC5C217593B500AB0D79 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

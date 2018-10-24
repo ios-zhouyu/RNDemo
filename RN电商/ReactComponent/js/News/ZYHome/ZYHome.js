@@ -15,7 +15,8 @@ import {
     ScrollView,
     TouchableOpacity,
     ListView,
-    AlertIOS
+    AlertIOS,
+    NativeModules
 } from 'react-native';
 
 import HomeTopView from "./ZYHomeTopView"
@@ -92,15 +93,15 @@ export default class Home extends Component {
     renderNavBar() {
         return(
             <View style={styles.navBar}>
-                <TouchableOpacity activeOpacity={0.5} onPress={this.clickEmement}>
+                <TouchableOpacity activeOpacity={0.5} onPress={this.jumpToNative}>
                     <Text style={styles.address}>北京</Text>
                 </TouchableOpacity>
                 <TextInput placeholder="输入商家,品类,商圈" style={styles.search} numberOfLines={1}></TextInput>
                 <View style={styles.navRightView}>
-                    <TouchableOpacity activeOpacity={0.5}  onPress={this.clickEmement}>
+                    <TouchableOpacity activeOpacity={0.5}  onPress={this.jumpToNative}>
                         <Image source={{url: "icon_homepage_message"}} style={styles.navRightImage}></Image>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.5}  onPress={this.clickEmement}>
+                    <TouchableOpacity activeOpacity={0.5}  onPress={this.jumpToNative}>
                         <Image source={{url: "icon_homepage_scan"}} style={styles.navRightImage}></Image>
                     </TouchableOpacity>
                 </View>
@@ -108,8 +109,9 @@ export default class Home extends Component {
         )
     }
 
-    clickEmement(element) {
-        AlertIOS.alert("点击了")
+    //跳转到原生界面
+    jumpToNative() {
+        nativeModule.openNativeVC()
     }
 }
 
