@@ -8,5 +8,5 @@
 ## 效果图
 
 <p align="center" >
-<img src="RNDemo.gif" title="RNDemo">
+<img src="./Docs/RNDemo.gif" title="RNDemo">
 </p>
