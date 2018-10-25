@@ -8,10 +8,9 @@
 
 #import "ViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface ZYLoginViewController : UIViewController
 
-@interface ZYLoginViewController : ViewController
+@property (nonatomic, copy)  void(^loginBlock) (NSArray* resultArr);
 
 @end
 
-NS_ASSUME_NONNULL_END

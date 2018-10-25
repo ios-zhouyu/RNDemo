@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZYViewController : ViewController
+@interface ZYViewController : UIViewController
 
 @property(strong, nonatomic) NSDictionary *params;
 

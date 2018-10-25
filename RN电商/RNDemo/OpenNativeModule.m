@@ -9,6 +9,7 @@
 #import "OpenNativeModule.h"
 #import "AppDelegate.h"
 #import "ZYViewController.h"
+#import "ZYLoginViewController.h"
 
 @implementation OpenNativeModule
 
@@ -37,6 +38,18 @@ RCT_EXPORT_METHOD(popToViewController) {
     dispatch_async(dispatch_get_main_queue(), ^{
         AppDelegate *delegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
         [delegate.navigationController popViewControllerAnimated:YES];
+    });
+}
+
+RCT_EXPORT_METHOD(loginState:(NSString *)state callback:(RCTResponseSenderBlock)callback) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AppDelegate *delegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
+        ZYLoginViewController *login = [[ZYLoginViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
+        [delegate.navigationController presentViewController:nav animated:YES completion:nil];
+        login.loginBlock = ^(NSArray *resultArr) {
+            callback(@[[NSNull null], resultArr]);
+        };
     });
 }
 

@@ -101,7 +101,7 @@ export default class Home extends Component {
                 </TouchableOpacity>
                 <TextInput placeholder="输入商家,品类,商圈" style={styles.search} numberOfLines={1}></TextInput>
                 <View style={styles.navRightView}>
-                    <TouchableOpacity activeOpacity={0.5}  onPress={this.jumpToNative}>
+                    <TouchableOpacity activeOpacity={0.5}  onPress={this.jumpToNativeLogin}>
                         <Image source={{url: "icon_homepage_message"}} style={styles.navRightImage}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={0.5}  onPress={this.jumpToNative}>
@@ -116,11 +116,23 @@ export default class Home extends Component {
     jumpToNative() {
         nativeModule.openNativeVC()
     }
-    
+
     //跳转到原生界面
     jumpToNativeWithParams() {
         var params = {"title": "定位地址: 北京"};
         nativeModule.openNativeVCWithParams(params)
+    }
+
+    //跳转到原生界面
+    //loginState:(NSString *)state callback:(RCTResponseSenderBlock)callback
+    jumpToNativeLogin() {
+        nativeModule.loginState(
+            "需要调起登录",
+            (error,events) => {
+                console.log(events);
+                alert(events);
+            }
+        )
     }
 }
 

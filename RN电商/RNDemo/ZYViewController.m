@@ -23,6 +23,16 @@
     }
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"原生2RN" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToNewRNPage)];
+    UITextField *text = [UITextField new];
+    text.backgroundColor = [UIColor grayColor];
+    
+    
+     self.view.backgroundColor = [UIColor whiteColor];
+    
+}
+
+- (void)login {
+    
 }
 
 - (void)jumpToNewRNPage {
