@@ -6,7 +6,7 @@
 
 ## 增加RN跳原生,原生跳RN界面,以及RN和原生跳同一个RN界面,返回键的处理
 
-`RN跳原生`
+### `RN跳原生`
 
 ```
 RN页面
@@ -67,7 +67,7 @@ RCT_EXPORT_METHOD(openNativeVC) {
 
 ```
 
-`RN和原生跳转同一个RN界面`
+### `RN和原生跳转同一个RN界面`
 
 ```
 1.在index.js同目录下重新创建一个js文件NewIndex.js,引用需要跳转到的RN界面的ZYHomeShopCenterDetail.js
@@ -184,6 +184,59 @@ RCT_EXPORT_METHOD(popToViewController) {
 
 ```
 
+### `RN页面向原生界面传值,原生界面回调给RN数据`
+
+```
+#import "ViewController.h"
+
+@interface ZYLoginViewController : UIViewController
+
+@property (nonatomic, copy)  void(^loginBlock) (NSArray* resultArr);
+
+@end
+```
+
+```
+RCT_EXPORT_METHOD(loginState:(NSString *)state callback:(RCTResponseSenderBlock)callback) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AppDelegate *delegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
+        ZYLoginViewController *login = [[ZYLoginViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
+        [delegate.navigationController presentViewController:nav animated:YES completion:nil];
+        login.loginBlock = ^(NSArray *resultArr) {
+            callback(@[[NSNull null], resultArr]);
+        };
+    });
+}
+```
+
+```
+- (void)dismiss {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)doLogin {
+    self.loginBlock(@[@"zhouyu", @"123456"]);
+    [self dismiss];
+}
+```
+
+```
+//跳转到原生界面
+//loginState:(NSString *)state callback:(RCTResponseSenderBlock)callback
+jumpToNativeLogin() {
+    nativeModule.loginState(
+        "需要调起登录",
+        (error,events) => {
+            console.log(events);
+            alert(events);
+        }
+    )
+}
+```
+
+
+
 ## 效果图
 
 <p align="center" >
@@ -192,4 +245,8 @@ RCT_EXPORT_METHOD(popToViewController) {
 
 <p align="center" >
 <img src="./Docs/RNDemo1.gif" title="RNDemo">
+</p>
+
+<p align="center" >
+<img src="./Docs/RNDemo2.gif" title="RNDemo">
 </p>

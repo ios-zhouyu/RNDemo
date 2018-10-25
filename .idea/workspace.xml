@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7dd0b1-b589-4852-a2bb-65b071efa477" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/OpenNativeModule.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/OpenNativeModule.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.h" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYRNViewController.h" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYRNViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.h" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +21,8 @@
       <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="131" column="36" lean-forward="false" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="135" selection-end-column="5" />
               <folding>
                 <element signature="e#125#166#0" expanded="true" />
                 <element signature="e#1037#1735#0" expanded="false" />
@@ -309,12 +303,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540354670648</updated>
       <workItem from="1540354673283" duration="421000" />
-      <workItem from="1540437004466" duration="4662000" />
+      <workItem from="1540437004466" duration="4922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5083000" />
+    <option name="totallyTimeSpent" value="5343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1244" height="777" extended-state="6" />
@@ -410,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="131" column="36" lean-forward="false" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
+        <state relative-caret-position="357">
+          <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="135" selection-end-column="5" />
           <folding>
             <element signature="e#125#166#0" expanded="true" />
             <element signature="e#1037#1735#0" expanded="false" />
