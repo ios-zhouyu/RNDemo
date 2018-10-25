@@ -7,6 +7,7 @@
 //
 
 #import "ZYViewController.h"
+#import "ZYRNViewController.h"
 
 @interface ZYViewController ()
 
@@ -18,6 +19,11 @@
     [super viewDidLoad];
     self.title = @"原生界面";
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"原生2RN" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToNewRNPage)];
+}
+
+- (void)jumpToNewRNPage {
+    [self.navigationController pushViewController:[[ZYRNViewController alloc] init] animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

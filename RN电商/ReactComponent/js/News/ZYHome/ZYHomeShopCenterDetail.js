@@ -11,18 +11,28 @@ import {
     View,
     TouchableOpacity,
     Image,
-    WebView
+    WebView,
+    NativeModules
 } from 'react-native';
 
 var KUIScreenWidth = require("Dimensions").get("window").width;
 
+var nativeModule = NativeModules.OpenNativeModule;
+
 export default class ShopCenterDetail extends Component {
+
+    static defaultProps = {
+        isFromNative: null
+    }
 
     constructor(props) {
         super(props);
         this.state = {
-            url: this.props.url + '?uuid=5C7B6342814C7B496D836A69C872202B5DE8DB689A2D777DFC717E10FC0B4271&utm_term=6.6&utm_source=AppStore&utm_content=5C7B6342814C7B496D836A69C872202B5DE8DB689A2D777DFC717E10FC0B4271&version_name=6.6&userid=160495643&utm_medium=iphone&lat=23.134709&utm_campaign=AgroupBgroupD100Ghomepage_shoppingmall_detailH0&token=b81UqRVf6pTL4UPLLBU7onkvyQoAAAAAAQIAACQVmmlv_Qf_xR-hBJVMtIlq7nYgStcvRiK_CHFmZ5Gf70DR47KP2VSP1Fu5Fc1ndA&lng=113.373890&f=iphone&ci=20&msid=0FA91DDF-BF5B-4DA2-B05D-FA2032F30C6C2016-04-04-08-38594'
+            // url: this.props.url + '?uuid=5C7B6342814C7B496D836A69C872202B5DE8DB689A2D777DFC717E10FC0B4271&utm_term=6.6&utm_source=AppStore&utm_content=5C7B6342814C7B496D836A69C872202B5DE8DB689A2D777DFC717E10FC0B4271&version_name=6.6&userid=160495643&utm_medium=iphone&lat=23.134709&utm_campaign=AgroupBgroupD100Ghomepage_shoppingmall_detailH0&token=b81UqRVf6pTL4UPLLBU7onkvyQoAAAAAAQIAACQVmmlv_Qf_xR-hBJVMtIlq7nYgStcvRiK_CHFmZ5Gf70DR47KP2VSP1Fu5Fc1ndA&lng=113.373890&f=iphone&ci=20&msid=0FA91DDF-BF5B-4DA2-B05D-FA2032F30C6C2016-04-04-08-38594'
+            url: "http://m.maoyan.com/imeituan/?_v_=yes&my_traffic_sources=group&ci=1&stid_b=1&cevent=imt%2Fhomepage%2Fcategory1%2F99#movie"
         }
+
+        this.popToView = this.popToView.bind(this)
     }
 
     render() {
@@ -44,7 +54,7 @@ export default class ShopCenterDetail extends Component {
     renderNavBar() {
         return(
             <View style={styles.navBar}>
-                <TouchableOpacity onPress={()=>{this.props.navigator.pop()}} activeOpacity={0.5} style={styles.navBackTouchable}>
+                <TouchableOpacity onPress={this.popToView} activeOpacity={0.5} style={styles.navBackTouchable}>
                     <Image source={{url: "icon_camera_back_normal"}} style={styles.navBackImage}/>
                 </TouchableOpacity>
                 <Text style={styles.navTitle}>购物中心详情页</Text>
@@ -53,6 +63,14 @@ export default class ShopCenterDetail extends Component {
                 </TouchableOpacity>
             </View>
         )
+    }
+
+    popToView() {
+        if (this.props.isFromNative !== null) {
+            this.props.navigator.pop()
+        } else {
+            nativeModule.popToViewController()
+        }
     }
 }
 

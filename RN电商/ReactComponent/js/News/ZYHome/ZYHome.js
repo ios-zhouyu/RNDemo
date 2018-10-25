@@ -33,6 +33,8 @@ var KUIScreenHeight = require("Dimensions").get("window").height;
 var addressWidth = 45;
 var navRightViewWidth = 50;
 
+var nativeModule = NativeModules.OpenNativeModule;
+
 export default class Home extends Component {
 
 
@@ -66,7 +68,8 @@ export default class Home extends Component {
                     component: ShopCenterDetail,
                     title: "购物中心详情页",
                     passProps: {
-                        "url": this.detalWithUrl(data)
+                        "url": this.detalWithUrl(data),
+                        "isFromNative": false
                     }
                 }
             );
@@ -93,7 +96,7 @@ export default class Home extends Component {
     renderNavBar() {
         return(
             <View style={styles.navBar}>
-                <TouchableOpacity activeOpacity={0.5} onPress={this.jumpToNative}>
+                <TouchableOpacity activeOpacity={0.5} onPress={() => alert("选择地址")}>
                     <Text style={styles.address}>北京</Text>
                 </TouchableOpacity>
                 <TextInput placeholder="输入商家,品类,商圈" style={styles.search} numberOfLines={1}></TextInput>

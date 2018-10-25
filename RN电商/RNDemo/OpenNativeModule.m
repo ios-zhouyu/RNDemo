@@ -23,4 +23,11 @@ RCT_EXPORT_METHOD(openNativeVC) {
     });
 }
 
+RCT_EXPORT_METHOD(popToViewController) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AppDelegate *delegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
+        [delegate.navigationController popViewControllerAnimated:YES];
+    });
+}
+
 @end
