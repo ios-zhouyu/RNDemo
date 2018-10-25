@@ -21,6 +21,7 @@
 		6268BC7F217593B500AB0D79 /* RNDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC7E217593B500AB0D79 /* RNDemoUITests.m */; };
 		6268BC8D2175A4E000AB0D79 /* ReactComponent in Resources */ = {isa = PBXBuildFile; fileRef = 6268BC8C2175A4E000AB0D79 /* ReactComponent */; };
 		6296CC6421816E1100345D77 /* ZYRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6296CC6321816E1100345D77 /* ZYRNViewController.m */; };
+		6296CC672181BDF900345D77 /* ZYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6296CC662181BDF900345D77 /* ZYLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		6268BC8C2175A4E000AB0D79 /* ReactComponent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReactComponent; sourceTree = "<group>"; };
 		6296CC6221816E1100345D77 /* ZYRNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYRNViewController.h; sourceTree = "<group>"; };
 		6296CC6321816E1100345D77 /* ZYRNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYRNViewController.m; sourceTree = "<group>"; };
+		6296CC652181BDF900345D77 /* ZYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLoginViewController.h; sourceTree = "<group>"; };
+		6296CC662181BDF900345D77 /* ZYLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLoginViewController.m; sourceTree = "<group>"; };
 		6A49B67F60AB3CBDF8C2636F /* libPods-RNDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDD914789B153BA2785226C /* Pods-RNDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDemo/Pods-RNDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C952AE478DCA54613F950879 /* Pods-RNDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDemoTests/Pods-RNDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				6200094F21802887000882E8 /* ZYViewController.m */,
 				6296CC6221816E1100345D77 /* ZYRNViewController.h */,
 				6296CC6321816E1100345D77 /* ZYRNViewController.m */,
+				6296CC652181BDF900345D77 /* ZYLoginViewController.h */,
+				6296CC662181BDF900345D77 /* ZYLoginViewController.m */,
 				62000948218020D3000882E8 /* OpenNativeModule.h */,
 				62000949218020D3000882E8 /* OpenNativeModule.m */,
 				6268BC63217593B500AB0D79 /* Assets.xcassets */,
@@ -379,6 +384,7 @@
 			files = (
 				6200094A218020D3000882E8 /* OpenNativeModule.m in Sources */,
 				6268BC5F217593B500AB0D79 /* ViewController.m in Sources */,
+				6296CC672181BDF900345D77 /* ZYLoginViewController.m in Sources */,
 				6268BC6A217593B500AB0D79 /* main.m in Sources */,
 				6296CC6421816E1100345D77 /* ZYRNViewController.m in Sources */,
 				6200095021802887000882E8 /* ZYViewController.m in Sources */,

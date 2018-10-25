@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"原生界面";
+    
+    if (self.title == nil) {
+        self.title = @"这是原生界面";
+    }
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"原生2RN" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToNewRNPage)];
 }
@@ -34,6 +37,10 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)setParams:(NSDictionary *)params {
+    self.title = params[@"title"];
 }
 
 @end

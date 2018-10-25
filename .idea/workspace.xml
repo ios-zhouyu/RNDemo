@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7dd0b1-b589-4852-a2bb-65b071efa477" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/RNDemo1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/OpenNativeModule.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/OpenNativeModule.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.h" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +25,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+            <state relative-caret-position="386">
+              <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
               <folding>
                 <element signature="e#125#166#0" expanded="true" />
                 <element signature="e#1037#1735#0" expanded="false" />
+                <element signature="e#1784#2163#0" expanded="false" />
                 <element signature="e#2192#2403#0" expanded="false" />
                 <element signature="e#2427#2547#0" expanded="false" />
               </folding>
@@ -47,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZYHomeShopCenterDetail.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZYHomeShopCenterDetail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="-539">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#45#84#0" expanded="true" />
@@ -69,8 +75,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" />
-        <option value="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
         <option value="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js" />
+        <option value="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
       </list>
     </option>
   </component>
@@ -304,18 +310,18 @@
       <option name="presentableId" value="Default" />
       <updated>1540354670648</updated>
       <workItem from="1540354673283" duration="421000" />
-      <workItem from="1540437004466" duration="2457000" />
+      <workItem from="1540437004466" duration="3893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2878000" />
+    <option name="totallyTimeSpent" value="4314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1244" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19623876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -351,6 +357,7 @@
           <folding>
             <element signature="e#125#166#0" expanded="true" />
             <element signature="e#1037#1735#0" expanded="false" />
+            <element signature="e#1784#2163#0" expanded="false" />
             <element signature="e#2192#2403#0" expanded="false" />
             <element signature="e#2427#2547#0" expanded="false" />
           </folding>
@@ -391,26 +398,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        <state relative-caret-position="-539">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <element signature="e#125#166#0" expanded="true" />
-            <element signature="e#1037#1735#0" expanded="false" />
-            <element signature="e#2192#2403#0" expanded="false" />
-            <element signature="e#2427#2547#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#45#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="386">
+          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#45#84#0" expanded="true" />
+            <element signature="e#125#166#0" expanded="true" />
+            <element signature="e#1037#1735#0" expanded="false" />
+            <element signature="e#1784#2163#0" expanded="false" />
+            <element signature="e#2192#2403#0" expanded="false" />
+            <element signature="e#2427#2547#0" expanded="false" />
           </folding>
         </state>
       </provider>

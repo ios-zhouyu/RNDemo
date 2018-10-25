@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZYViewController : ViewController
 
+@property(strong, nonatomic) NSDictionary *params;
+
 @end
 
 NS_ASSUME_NONNULL_END

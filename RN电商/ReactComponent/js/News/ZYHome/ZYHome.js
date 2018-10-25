@@ -96,7 +96,7 @@ export default class Home extends Component {
     renderNavBar() {
         return(
             <View style={styles.navBar}>
-                <TouchableOpacity activeOpacity={0.5} onPress={() => alert("选择地址")}>
+                <TouchableOpacity activeOpacity={0.5} onPress={this.jumpToNativeWithParams}>
                     <Text style={styles.address}>北京</Text>
                 </TouchableOpacity>
                 <TextInput placeholder="输入商家,品类,商圈" style={styles.search} numberOfLines={1}></TextInput>
@@ -115,6 +115,12 @@ export default class Home extends Component {
     //跳转到原生界面
     jumpToNative() {
         nativeModule.openNativeVC()
+    }
+    
+    //跳转到原生界面
+    jumpToNativeWithParams() {
+        var params = {"title": "定位地址: 北京"};
+        nativeModule.openNativeVCWithParams(params)
     }
 }
 
