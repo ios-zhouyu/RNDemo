@@ -12,6 +12,7 @@
 		1BAB5F320E751F2349F3B8B2 /* libPods-RNDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A49B67F60AB3CBDF8C2636F /* libPods-RNDemoTests.a */; };
 		6200094A218020D3000882E8 /* OpenNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 62000949218020D3000882E8 /* OpenNativeModule.m */; };
 		6200095021802887000882E8 /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6200094F21802887000882E8 /* ZYViewController.m */; };
+		6203E2392182BBC9009C43AE /* NativeToRNEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203E2382182BBC9009C43AE /* NativeToRNEventEmitter.m */; };
 		6268BC5C217593B500AB0D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC5B217593B500AB0D79 /* AppDelegate.m */; };
 		6268BC5F217593B500AB0D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC5E217593B500AB0D79 /* ViewController.m */; };
 		6268BC64217593B500AB0D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6268BC63217593B500AB0D79 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		62000949218020D3000882E8 /* OpenNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenNativeModule.m; sourceTree = "<group>"; };
 		6200094E21802887000882E8 /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		6200094F21802887000882E8 /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
+		6203E2372182BBC9009C43AE /* NativeToRNEventEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeToRNEventEmitter.h; sourceTree = "<group>"; };
+		6203E2382182BBC9009C43AE /* NativeToRNEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeToRNEventEmitter.m; sourceTree = "<group>"; };
 		6268BC57217593B500AB0D79 /* RNDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6268BC5A217593B500AB0D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6268BC5B217593B500AB0D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				6296CC662181BDF900345D77 /* ZYLoginViewController.m */,
 				62000948218020D3000882E8 /* OpenNativeModule.h */,
 				62000949218020D3000882E8 /* OpenNativeModule.m */,
+				6203E2372182BBC9009C43AE /* NativeToRNEventEmitter.h */,
+				6203E2382182BBC9009C43AE /* NativeToRNEventEmitter.m */,
 				6268BC63217593B500AB0D79 /* Assets.xcassets */,
 				6268BC65217593B500AB0D79 /* LaunchScreen.storyboard */,
 				6268BC68217593B500AB0D79 /* Info.plist */,
@@ -383,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6200094A218020D3000882E8 /* OpenNativeModule.m in Sources */,
+				6203E2392182BBC9009C43AE /* NativeToRNEventEmitter.m in Sources */,
 				6268BC5F217593B500AB0D79 /* ViewController.m in Sources */,
 				6296CC672181BDF900345D77 /* ZYLoginViewController.m in Sources */,
 				6268BC6A217593B500AB0D79 /* main.m in Sources */,

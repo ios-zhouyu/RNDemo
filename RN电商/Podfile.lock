@@ -37,6 +37,8 @@ PODS:
     - React/Core
   - React/RCTNetwork (0.57.3):
     - React/Core
+  - React/RCTPushNotification (0.57.3):
+    - React/Core
   - React/RCTText (0.57.3):
     - React/Core
   - React/RCTWebSocket (0.57.3):
@@ -56,6 +58,7 @@ DEPENDENCIES:
   - React/RCTImage (from `./ReactComponent/node_modules/react-native`)
   - React/RCTLinkingIOS (from `./ReactComponent/node_modules/react-native`)
   - React/RCTNetwork (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTPushNotification (from `./ReactComponent/node_modules/react-native`)
   - React/RCTText (from `./ReactComponent/node_modules/react-native`)
   - React/RCTWebSocket (from `./ReactComponent/node_modules/react-native`)
   - yoga (from `./ReactComponent/node_modules/react-native/ReactCommon/yoga`)
@@ -84,6 +87,6 @@ SPEC CHECKSUMS:
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 675f35fbec8d1e829db524e79202b6481e0de000
+PODFILE CHECKSUM: 3141644d5cfd79b66f688bc18e1eb22b0bb26f17
 
 COCOAPODS: 1.5.3

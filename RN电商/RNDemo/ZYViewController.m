@@ -8,6 +8,7 @@
 
 #import "ZYViewController.h"
 #import "ZYRNViewController.h"
+#import "NativeToRNEventEmitter.h"
 
 @interface ZYViewController ()
 
@@ -23,20 +24,24 @@
     }
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"原生2RN" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToNewRNPage)];
-    UITextField *text = [UITextField new];
-    text.backgroundColor = [UIColor grayColor];
-    
-    
      self.view.backgroundColor = [UIColor whiteColor];
     
-}
-
-- (void)login {
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 150, 300, 80)];
+    [button setTitle:@"向首页发通知" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(pushNoticationToHome) forControlEvents:UIControlEventTouchUpInside];
     
+    [self.view addSubview:button];
 }
 
 - (void)jumpToNewRNPage {
     [self.navigationController pushViewController:[[ZYRNViewController alloc] init] animated:YES];
+}
+
+- (void)pushNoticationToHome {
+    //发通知传值
+    [NativeToRNEventEmitter shareInstance];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"CustomEventNameNotifation" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

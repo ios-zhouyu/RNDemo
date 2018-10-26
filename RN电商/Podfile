@@ -19,7 +19,7 @@ target 'RNDemo' do
     #'RCTAdSupport',
     #'RCTCameraRoll',
     #'RCTGeolocation',
-    #'RCTPushNotification',
+    'RCTPushNotification',
     #'RCTSettings',
     #'RCTVibration',
     'RCTLinkingIOS',

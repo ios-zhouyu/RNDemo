@@ -15,8 +15,8 @@ import {
     ScrollView,
     TouchableOpacity,
     ListView,
-    AlertIOS,
-    NativeModules
+    NativeModules,
+    NativeEventEmitter
 } from 'react-native';
 
 import HomeTopView from "./ZYHomeTopView"
@@ -34,9 +34,16 @@ var addressWidth = 45;
 var navRightViewWidth = 50;
 
 var nativeModule = NativeModules.OpenNativeModule;
+var nativeToRNEventModule = NativeModules.NativeToRNEventEmitter;
 
 export default class Home extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            add: "北京"
+        };
+    }
 
     render() {
         return (
@@ -97,7 +104,7 @@ export default class Home extends Component {
         return(
             <View style={styles.navBar}>
                 <TouchableOpacity activeOpacity={0.5} onPress={this.jumpToNativeWithParams}>
-                    <Text style={styles.address}>北京</Text>
+                    <Text style={styles.address}>{this.state.add}</Text>
                 </TouchableOpacity>
                 <TextInput placeholder="输入商家,品类,商圈" style={styles.search} numberOfLines={1}></TextInput>
                 <View style={styles.navRightView}>
@@ -133,6 +140,20 @@ export default class Home extends Component {
                 alert(events);
             }
         )
+    }
+
+    componentDidMount() {
+        var eventEmitter = new NativeEventEmitter(nativeToRNEventModule);
+        this.listener = eventEmitter.addListener("CustomEventName", (result) => {
+            alert("监听到通知事件" + result);
+            this.setState({
+                add: result.name
+            });
+        })
+    }
+
+    componentWillUnmount() {
+        this.listener && this.listener.remove();
     }
 }
 

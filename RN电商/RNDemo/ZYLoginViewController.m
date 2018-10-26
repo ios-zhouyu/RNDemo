@@ -37,6 +37,7 @@
     [self.view addSubview:self.account];
     [self.view addSubview:self.password];
     [self.view addSubview:self.login];
+    
 }
 
 - (void)dismiss {
