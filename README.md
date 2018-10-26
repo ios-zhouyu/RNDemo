@@ -6,7 +6,7 @@
 
 ## 增加RN跳原生,原生跳RN界面,以及RN和原生跳同一个RN界面,返回键的处理
 
-### `RN跳原生`
+### 1. `RN跳原生`
 
 ```
 RN页面
@@ -67,7 +67,7 @@ RCT_EXPORT_METHOD(openNativeVC) {
 
 ```
 
-### `RN和原生跳转同一个RN界面`
+### 2. `RN和原生跳转同一个RN界面`
 
 ```
 1.在index.js同目录下重新创建一个js文件NewIndex.js,引用需要跳转到的RN界面的ZYHomeShopCenterDetail.js
@@ -184,7 +184,7 @@ RCT_EXPORT_METHOD(popToViewController) {
 
 ```
 
-### `RN页面向原生界面传值,原生界面回调给RN数据`
+### 3. `RN页面向原生界面传值,原生界面回调给RN数据`
 
 ```
 #import "ViewController.h"
@@ -235,6 +235,123 @@ jumpToNativeLogin() {
 }
 ```
 
+### 4. 原生页面向RN页面传值
+
+[React Native中文网: 和原生端通信](https://reactnative.cn/docs/communication-ios/) 
+
+[React Native中文网: 回调函数及通信](https://reactnative.cn/docs/native-modules-ios/)
+
+`主要分两种情况: 一种是原生界面向下级RN界面传值; 另一种是原生界面向上级RN界面传值`
+#### 4.1 原生界面向下级RN界面传值
+
+<font color=red>这种情况不能用`NativeEventEmitter`结合iOS的通知来实现传值,因为通知是现有监听者再有发送者,向下级RN界面传值,这种方式有可能下级RN页面还没加载出来,通知就已经发送了,导致下级RN页面获取不到值</font>
+
+`可以利用加载js的budle文件时,利用initialProperties参数进行传值`
+
+```
+NSDictionary *properties = @{@"name": @"zhangsan"};
+NSURL *url = [NSURL URLWithString:@"http://localhost:8081/NewIndex.bundle?platform=ios&dev=true"];
+RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:url moduleName:@"RNDemo" initialProperties:properties launchOptions:nil];
+self.view = rootView;
+```
+
+#### 4.2 原生界面向上级RN界面传值
+<font color=red>此种情况可以使用RN的`NativeEventEmitter`结合iOS的通知来实现传值</font>
+
+1. 原生界面创建事件传递的module类,继承RCTEventEmitter,遵守RCTBridgeModule协议
+
+```
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
+
+@interface NativeToRNEventEmitter : RCTEventEmitter <RCTBridgeModule>
++ (instancetype)shareInstance;
+@end
+```
+
+2. 原生module类实现和重写相关方法
+
+```
+#import "NativeToRNEventEmitter.h"
+
+@interface NativeToRNEventEmitter()
+@property (nonatomic,assign)BOOL hasListeners;
+@end
+
+@implementation NativeToRNEventEmitter
+
++ (instancetype)shareInstance {
+static NativeToRNEventEmitter *instance;
+static dispatch_once_t onceToken;
+dispatch_once(&onceToken, ^{
+instance = [[NativeToRNEventEmitter alloc] init];
+});
+return instance;
+}
+
+RCT_EXPORT_MODULE();
+
+//init方法中使用NSNotificationCenter监听iOS端要发送事件的操作
+- (instancetype)init {
+if (self = [super init]) {
+[self registerNotifications];
+}
+return self;
+}
+
+//在NSNotification对应的通知方法中将事件发送给RN
+- (void)registerNotifications {
+[[NSNotificationCenter defaultCenter] addObserver:self
+selector:@selector(sendCustomEvent:)
+name:@"CustomEventNameNotifation"
+object:nil];
+}
+
+- (void)sendCustomEvent:(NSNotification *)notification {
+//    NSString *eventName = notification.userInfo[@"name"];
+if (self.hasListeners) {
+[self sendEventWithName:@"CustomEventName" body:@{@"name": @"东皇大厦"}];
+}
+}
+
+#pragma RCTEventEmitter
+//重写supportedEvents方法，在这个方法中声明支持的事件名称
+- (NSArray<NSString *> *)supportedEvents {
+return @[@"CustomEventName"];
+}
+
+// 在添加第一个监听函数时触发
+-(void)startObserving {
+self.hasListeners = YES;
+}
+
+-(void)stopObserving {
+self.hasListeners = NO;
+}
+
+@end
+```
+
+3. RN界面: 导入NativeEventEmitter
+
+```
+var nativeToRNEventModule = NativeModules.NativeToRNEventEmitter;
+
+componentDidMount() {
+var eventEmitter = new NativeEventEmitter(nativeToRNEventModule);
+this.listener = eventEmitter.addListener("CustomEventName", (result) => {
+alert("监听到通知事件" + result);
+this.setState({
+add: result.name
+});
+})
+}
+
+componentWillUnmount() {
+this.listener && this.listener.remove();
+}
+```
+
 
 
 ## 效果图
@@ -249,4 +366,8 @@ jumpToNativeLogin() {
 
 <p align="center" >
 <img src="./Docs/RNDemo2.gif" title="RNDemo">
+</p>
+
+<p align="center" >
+<img src="./Docs/RNDemo3.gif" title="RNDemo">
 </p>
