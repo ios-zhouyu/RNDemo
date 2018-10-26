@@ -281,52 +281,52 @@ self.view = rootView;
 @implementation NativeToRNEventEmitter
 
 + (instancetype)shareInstance {
-static NativeToRNEventEmitter *instance;
-static dispatch_once_t onceToken;
-dispatch_once(&onceToken, ^{
-instance = [[NativeToRNEventEmitter alloc] init];
-});
-return instance;
+    static NativeToRNEventEmitter *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[NativeToRNEventEmitter alloc] init];
+    });
+    return instance;
 }
 
 RCT_EXPORT_MODULE();
 
 //init方法中使用NSNotificationCenter监听iOS端要发送事件的操作
 - (instancetype)init {
-if (self = [super init]) {
-[self registerNotifications];
-}
-return self;
+    if (self = [super init]) {
+        [self registerNotifications];
+    }
+    return self;
 }
 
 //在NSNotification对应的通知方法中将事件发送给RN
 - (void)registerNotifications {
-[[NSNotificationCenter defaultCenter] addObserver:self
-selector:@selector(sendCustomEvent:)
-name:@"CustomEventNameNotifation"
-object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+    selector:@selector(sendCustomEvent:)
+    name:@"CustomEventNameNotifation"
+    object:nil];
 }
 
 - (void)sendCustomEvent:(NSNotification *)notification {
-//    NSString *eventName = notification.userInfo[@"name"];
-if (self.hasListeners) {
-[self sendEventWithName:@"CustomEventName" body:@{@"name": @"东皇大厦"}];
-}
+    //    NSString *eventName = notification.userInfo[@"name"];
+    if (self.hasListeners) {
+        [self sendEventWithName:@"CustomEventName" body:@{@"name": @"东皇大厦"}];
+    }
 }
 
 #pragma RCTEventEmitter
 //重写supportedEvents方法，在这个方法中声明支持的事件名称
 - (NSArray<NSString *> *)supportedEvents {
-return @[@"CustomEventName"];
+    return @[@"CustomEventName"];
 }
 
 // 在添加第一个监听函数时触发
 -(void)startObserving {
-self.hasListeners = YES;
+    self.hasListeners = YES;
 }
 
 -(void)stopObserving {
-self.hasListeners = NO;
+    self.hasListeners = NO;
 }
 
 @end
@@ -338,17 +338,17 @@ self.hasListeners = NO;
 var nativeToRNEventModule = NativeModules.NativeToRNEventEmitter;
 
 componentDidMount() {
-var eventEmitter = new NativeEventEmitter(nativeToRNEventModule);
-this.listener = eventEmitter.addListener("CustomEventName", (result) => {
-alert("监听到通知事件" + result);
-this.setState({
-add: result.name
-});
-})
+    var eventEmitter = new NativeEventEmitter(nativeToRNEventModule);
+    this.listener = eventEmitter.addListener("CustomEventName", (result) => {
+        alert("监听到通知事件" + result);
+        this.setState({
+            add: result.name
+        });
+    })
 }
 
 componentWillUnmount() {
-this.listener && this.listener.remove();
+    this.listener && this.listener.remove();
 }
 ```
 
