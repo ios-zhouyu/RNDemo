@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7dd0b1-b589-4852-a2bb-65b071efa477" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RN电商/RNDemo/NativeToRNEventEmitter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RN电商/RNDemo/NativeToRNEventEmitter.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/Podfile" afterPath="$PROJECT_DIR$/RN电商/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/Podfile.lock" afterPath="$PROJECT_DIR$/RN电商/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/RN电商/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/RN电商/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/xcuserdata/zhouyu.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcodeproj/xcuserdata/zhouyu.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/AppDelegate.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYLoginViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYRNViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYRNViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" afterPath="$PROJECT_DIR$/RN电商/RNDemo/ZYViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="156" selection-end-column="5" />
+            <state relative-caret-position="-1055">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#125#166#0" expanded="true" />
                 <element signature="e#1222#1920#0" expanded="false" />
@@ -48,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewIndex.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewIndex.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="437">
+              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
               <folding>
                 <element signature="e#67#115#0" expanded="true" />
               </folding>
@@ -83,9 +70,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" />
         <option value="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js" />
         <option value="$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js" />
+        <option value="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" />
       </list>
     </option>
   </component>
@@ -323,12 +310,12 @@
       <updated>1540354670648</updated>
       <workItem from="1540354673283" duration="421000" />
       <workItem from="1540437004466" duration="5012000" />
-      <workItem from="1540522287628" duration="7196000" />
+      <workItem from="1540522287628" duration="7624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12629000" />
+    <option name="totallyTimeSpent" value="13057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1152" height="777" extended-state="0" />
@@ -444,12 +431,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="-1055">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#67#115#0" expanded="true" />
+            <element signature="e#125#166#0" expanded="true" />
+            <element signature="e#1222#1920#0" expanded="false" />
+            <element signature="e#1969#2348#0" expanded="false" />
+            <element signature="e#2377#2588#0" expanded="false" />
+            <element signature="e#2612#2732#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -467,16 +458,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="156" selection-end-column="5" />
+        <state relative-caret-position="437">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding>
-            <element signature="e#125#166#0" expanded="true" />
-            <element signature="e#1222#1920#0" expanded="false" />
-            <element signature="e#1969#2348#0" expanded="false" />
-            <element signature="e#2377#2588#0" expanded="false" />
-            <element signature="e#2612#2732#0" expanded="false" />
+            <element signature="e#67#115#0" expanded="true" />
           </folding>
         </state>
       </provider>

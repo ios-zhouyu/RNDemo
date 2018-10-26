@@ -20,6 +20,8 @@ export default class RNDemo extends Component {
             <ShopCenterDetail/>
         );
     }
+
+    
 }
 
 AppRegistry.registerComponent('RNDemo', () => RNDemo);
