@@ -21,8 +21,8 @@
 		6268BC74217593B500AB0D79 /* RNDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC73217593B500AB0D79 /* RNDemoTests.m */; };
 		6268BC7F217593B500AB0D79 /* RNDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268BC7E217593B500AB0D79 /* RNDemoUITests.m */; };
 		6268BC8D2175A4E000AB0D79 /* ReactComponent in Resources */ = {isa = PBXBuildFile; fileRef = 6268BC8C2175A4E000AB0D79 /* ReactComponent */; };
-		626C75DA2186E85C00F9C15A /* Index.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 626C75D92186E85B00F9C15A /* Index.ios.jsbundle */; };
-		626C75DC2186EB1600F9C15A /* NewIndex.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 626C75DB2186EB1600F9C15A /* NewIndex.jsbundle */; };
+		626C75DE2186F2A100F9C15A /* Index.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 626C75DD2186F2A000F9C15A /* Index.ios.jsbundle */; };
+		626C75E02186F2AA00F9C15A /* NewIndex.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 626C75DF2186F2A900F9C15A /* NewIndex.jsbundle */; };
 		6296CC6421816E1100345D77 /* ZYRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6296CC6321816E1100345D77 /* ZYRNViewController.m */; };
 		6296CC672181BDF900345D77 /* ZYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6296CC662181BDF900345D77 /* ZYLoginViewController.m */; };
 /* End PBXBuildFile section */
@@ -72,8 +72,8 @@
 		6268BC7E217593B500AB0D79 /* RNDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDemoUITests.m; sourceTree = "<group>"; };
 		6268BC80217593B500AB0D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6268BC8C2175A4E000AB0D79 /* ReactComponent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReactComponent; sourceTree = "<group>"; };
-		626C75D92186E85B00F9C15A /* Index.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Index.ios.jsbundle; path = RNDemo/Index.ios.jsbundle; sourceTree = "<group>"; };
-		626C75DB2186EB1600F9C15A /* NewIndex.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NewIndex.jsbundle; path = RNDemo/NewIndex.jsbundle; sourceTree = "<group>"; };
+		626C75DD2186F2A000F9C15A /* Index.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Index.ios.jsbundle; sourceTree = "<group>"; };
+		626C75DF2186F2A900F9C15A /* NewIndex.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewIndex.jsbundle; sourceTree = "<group>"; };
 		6296CC6221816E1100345D77 /* ZYRNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYRNViewController.h; sourceTree = "<group>"; };
 		6296CC6321816E1100345D77 /* ZYRNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYRNViewController.m; sourceTree = "<group>"; };
 		6296CC652181BDF900345D77 /* ZYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLoginViewController.h; sourceTree = "<group>"; };
@@ -115,8 +115,7 @@
 		6268BC4E217593B500AB0D79 = {
 			isa = PBXGroup;
 			children = (
-				626C75D92186E85B00F9C15A /* Index.ios.jsbundle */,
-				626C75DB2186EB1600F9C15A /* NewIndex.jsbundle */,
+				626C75E12186F44C00F9C15A /* Bundle */,
 				6268BC8C2175A4E000AB0D79 /* ReactComponent */,
 				6268BC59217593B500AB0D79 /* RNDemo */,
 				6268BC72217593B500AB0D79 /* RNDemoTests */,
@@ -178,6 +177,15 @@
 				6268BC80217593B500AB0D79 /* Info.plist */,
 			);
 			path = RNDemoUITests;
+			sourceTree = "<group>";
+		};
+		626C75E12186F44C00F9C15A /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				626C75DD2186F2A000F9C15A /* Index.ios.jsbundle */,
+				626C75DF2186F2A900F9C15A /* NewIndex.jsbundle */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		C66DBAE2BB92CC3E20F7622F /* Pods */ = {
@@ -309,9 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626C75DA2186E85C00F9C15A /* Index.ios.jsbundle in Resources */,
+				626C75DE2186F2A100F9C15A /* Index.ios.jsbundle in Resources */,
 				6268BC67217593B500AB0D79 /* LaunchScreen.storyboard in Resources */,
-				626C75DC2186EB1600F9C15A /* NewIndex.jsbundle in Resources */,
+				626C75E02186F2AA00F9C15A /* NewIndex.jsbundle in Resources */,
 				6268BC64217593B500AB0D79 /* Assets.xcassets in Resources */,
 				6268BC8D2175A4E000AB0D79 /* ReactComponent in Resources */,
 			);
