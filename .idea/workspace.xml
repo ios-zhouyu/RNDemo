@@ -4,7 +4,7 @@
     <list default="true" id="0e7dd0b1-b589-4852-a2bb-65b071efa477" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/RN电商/RNDemo.xcworkspace/xcuserdata/zhouyu.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RN电商/ReactComponent/package.json" afterPath="$PROJECT_DIR$/RN电商/ReactComponent/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="ZYHome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1055">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#125#166#0" expanded="true" />
                 <element signature="e#1222#1920#0" expanded="false" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="NewIndex.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="399">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="e#67#115#0" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file leaf-file-name="ZYHomeShopCenterDetail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="1064">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#45#84#0" expanded="true" />
@@ -88,7 +88,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="36" />
     <option name="y" value="23" />
-    <option name="width" value="1152" />
+    <option name="width" value="1187" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -263,8 +263,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,18 +310,19 @@
       <updated>1540354670648</updated>
       <workItem from="1540354673283" duration="421000" />
       <workItem from="1540437004466" duration="5012000" />
-      <workItem from="1540522287628" duration="7624000" />
+      <workItem from="1540522287628" duration="7886000" />
+      <workItem from="1540784693907" duration="744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13057000" />
+    <option name="totallyTimeSpent" value="14063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1152" height="777" extended-state="0" />
+    <frame x="36" y="23" width="1187" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2122016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21183534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -350,6 +351,43 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#125#166#0" expanded="true" />
+            <element signature="e#1222#1920#0" expanded="false" />
+            <element signature="e#1969#2348#0" expanded="false" />
+            <element signature="e#2377#2588#0" expanded="false" />
+            <element signature="e#2612#2732#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#45#84#0" expanded="true" />
+            <element signature="e#1343#1818#0" expanded="false" />
+            <element signature="e#2483#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#67#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -419,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="236" column="6" lean-forward="false" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,14 +464,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1055">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#125#166#0" expanded="true" />
             <element signature="e#1222#1920#0" expanded="false" />
@@ -447,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/js/News/ZYHome/ZYHomeShopCenterDetail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="1064">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#45#84#0" expanded="true" />
@@ -460,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RN电商/ReactComponent/NewIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="399">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#67#115#0" expanded="true" />
           </folding>

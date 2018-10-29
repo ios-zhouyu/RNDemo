@@ -20,7 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true"];
+    NSURL *url = [[NSURL alloc] init];
+    
+    #if DEBUG
+        url = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true"];
+    #else
+        url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"Index.ios.jsbundle" ofType:nil]];
+    #endif
+    
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:url moduleName:@"RNDemo" initialProperties:nil launchOptions:nil];
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

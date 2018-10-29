@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "build-ios":"node node_modules/react-native/local-cli/cli.js bundle --platform ios --dev false --entry-file index.js  --bundle-output ../RNDemo/Index.ios.jsbundle"
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",

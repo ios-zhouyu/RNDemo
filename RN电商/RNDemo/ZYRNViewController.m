@@ -19,7 +19,14 @@
     [super viewDidLoad];
     
     NSDictionary *properties = @{@"name": @"zhangsan"};
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8081/NewIndex.bundle?platform=ios&dev=true"];
+    
+    NSURL *url = [[NSURL alloc] init];
+#if DEBUG
+    url = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true"];
+#else
+    url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"NewIndex.jsbundle" ofType:nil]];
+#endif
+    
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:url moduleName:@"RNDemo" initialProperties:properties launchOptions:nil];
     self.view = rootView;
 }
